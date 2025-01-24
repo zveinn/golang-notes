@@ -1,1 +1,1 @@
-# go7
+# golang notes

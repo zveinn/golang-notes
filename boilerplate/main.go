@@ -47,6 +47,7 @@ func main() {
 	}
 
 	goroutineMonitor <- &Signal{ID: 2, ctx: ctx, Tag: "Work Generator "}
+	goroutineMonitor <- &Signal{ID: 3, ctx: ctx, Tag: "Web API"}
 
 	// This channel is response for catching operating system signal
 	// like ctrl+c and then exit the program cleanely using cancel()
@@ -76,6 +77,8 @@ func main() {
 				go worker(signal)
 			case 2:
 				go sendWork(signal)
+			case 3:
+				go startAnAPI(signal)
 			default:
 				logger.Warn("Unknown signal caught", "ID", strconv.Itoa(signal.ID), "Tag", signal.Tag)
 			}

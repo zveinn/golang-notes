@@ -30,7 +30,7 @@ func (c *SafeCounter) GetCounter() int {
 	return counter
 }
 
-func syncOperations() {
+func waitgroupsAndSync() {
 	safeCounter := SafeCounter{}
 
 	for i := 0; i < 10; i++ {

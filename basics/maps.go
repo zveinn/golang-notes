@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func mapOperations() {
+func maps() {
 	ages := make(map[string]int)
 	fmt.Println("1. Empty map:", ages)
 

@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func sliceOperations() {
+func slices() {
 	numbers := []int{1, 2, 3, 4, 5}
 	fmt.Printf("Original slice: %v, length: %d, capacity: %d\n", numbers, len(numbers), cap(numbers))
 

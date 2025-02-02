@@ -24,7 +24,7 @@ func (p *Person) GrowOlder() {
 	p.Age++
 }
 
-func structOperations() {
+func structs() {
 	person1 := Person{
 		Name:     "Alice",
 		Age:      30,

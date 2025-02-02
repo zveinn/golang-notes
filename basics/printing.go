@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func printing() {
+func formattingPrintStatements() {
 	fmt.Printf("Basic formatting: %d %.2f %s\n", 1, 3.14159, "pi")
 
 	fmt.Printf("Field widths and alignment: |%5d| |%5.2f| |%-8s|\n", 123, 3.14159, "left")
